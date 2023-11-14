@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+h1 {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 48px;
+}
+
+h3 {
+  color: #121723;
+  font-family: Anonymous Pro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+p {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #F1F1F1;
+  margin: 0;
+}
+
+.header {
+  background-color: white;
+  border-bottom: solid 1px #676B73;
+}
+
+.container-header {
+  padding: 30px 0 16px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding-right: 0px;
+}
+
+.container {
+  padding-top: 32px;
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.sneaker {
+  border-radius: 12px;
+  width: 364px;
+  background-color: white;
+}
+
+.container__title {
+  color: #121723;
+  font-family: Anonymous Pro;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  margin-right: 24px;
+}
+
+.container__text {
+  color: #121723;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 24px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+  margin-right: 24px;
+}
+
+.logo {
+  width: 215px;
+  height: 64px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  gap: 24px;
+  color: #121723;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  list-style-type: none;
+}
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  margin-bottom: 30px;
+}
+
+.logo2 {
+  width: 300px;
+  height: 22px;
+}
+
+.footer {
+  background-color: #121723;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.footer_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link2 {
+  font-family: "Anonymous Pro", monospace;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  height: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.footer_logo {
+  color: #a1a6b4;
+  font-family: "Anonymous Pro", monospace;
+  text-align: center;
+  border-top: 1px solid #e6e8ec66;
+  margin-top: 30px;
+  padding-top: 16px;
+}
+
+.sneaker img {
+  width: 100%;
+}
+
+/* _________________________________________________________ */
+
+.sneaker {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.sneaker:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 28px rgba(71, 71, 71, 0.25), 0 10px 10px rgba(71, 71, 71, 0.25);
+}
+
+.sneaker img {
+  object-fit: cover;
+}
+
+.sneaker.container__text {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.sneaker.container__title {
+  font-size: 17px;
+  color: #fff;
+}
+
+/* _______________________________________________________ */
+
+@media screen and (max-width: 768px) {
+  .main {
+    width: 375px;
+  }
+
+  .header {
+    display: flex;
+    max-width: 1024px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-header {
+    display: flex;
+    width: 343px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  .footer_line {
+    flex-direction: column;
+  }
+
+  .link2 {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .card-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .sneaker {
+    max-width: 100%;
+  }
+
+  .footer_logo {
+    font-size: 16px;
+    padding-top: 24px;
+  }
+
+  .container_main {
+    width: 100%;
+  }
+}
